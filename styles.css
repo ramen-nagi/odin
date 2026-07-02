@@ -2,8 +2,34 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Roboto", "Arial";
+    margin: 0px;
+}
+
+.header, .title, .information, 
+.sign-up, .quote, .footer {
+    padding: 0px 200px;
 }
 
 .header {
     display: flex;
+    background-color: #1F2937;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.link {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
 }
