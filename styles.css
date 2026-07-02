@@ -5,14 +5,23 @@ body {
     margin: 0px;
 }
 
-.header, .title, .information, 
-.sign-up, .quote, .footer {
-    padding: 0px 200px;
+.header, .title,
+.sign-up, .footer {
+    padding: 0% 15%;
 }
+
+.information, .quote {
+    padding: 5% 20%;
+}
+
+.header, .title {
+    background-color: #1F2937;
+}
+
+/* Header */
 
 .header {
     display: flex;
-    background-color: #1F2937;
     justify-content: space-between;
     align-items: center;
 }
@@ -20,6 +29,7 @@ body {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bold;
 }
 
 .link {
@@ -32,4 +42,131 @@ ul {
     display: flex;
     list-style-type: none;
     gap: 20px;
+}
+
+/* Title */
+
+.title {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 20px;
+    color: #F9FAF8;
+}
+
+.awesome {
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    margin: 0px;
+}
+
+.awesome.main-text {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.awesome.sub-text {
+    margin-bottom: 8px;
+}
+
+.placeholder-image {
+    display: flex;
+    flex: 1 1 50%;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Information */
+
+.information {
+    color: #1F2937;
+}
+
+.info-heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.info-container {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info div {
+    flex: 1 1 150px;
+    border: 5px solid #3882F6;
+    border-radius: 8px;
+    width: 150px;
+}
+
+/* quote */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote.text {
+    font-weight: 300;
+    color: #1F2937;
+    font-size: 36px;
+    padding: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+.quote.author {
+    text-align: right;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.sign-up {
+    display: flex;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 50px;
+    margin: 5% 10%;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+.bold-text {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border: 2px solid #F9FAF8;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.awesome button {
+    border: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+    background-color: #1F2937;
 }
